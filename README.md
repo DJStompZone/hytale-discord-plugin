@@ -2,6 +2,8 @@
 
 A simple example plugin for Hytale servers demonstrating the basics of plugin development.
 
+📺 **Video Tutorial**: [Watch on YouTube](https://www.youtube.com/watch?v=NEw9QjzZ9nM)
+
 ## Features
 
 - Registers a `/hello` command
