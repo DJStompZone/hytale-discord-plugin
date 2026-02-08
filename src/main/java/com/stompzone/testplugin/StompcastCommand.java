@@ -1,20 +1,19 @@
-package com.example.plugin;
+package com.stompzone.testplugin;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
-import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.command.system.CommandContext;
 import com.hypixel.hytale.server.core.command.system.basecommands.AbstractPlayerCommand;
+import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
-import com.hypixel.hytale.server.core.util.EventTitleUtil;
 
 import javax.annotation.Nonnull;
 
-public class HelloCommand extends AbstractPlayerCommand {
+public class StompcastCommand extends AbstractPlayerCommand {
 
-    public HelloCommand(@Nonnull String name, @Nonnull String description, boolean requiresConfirmation) {
+    public StompcastCommand(@Nonnull String name, @Nonnull String description, boolean requiresConfirmation) {
         super(name, description, requiresConfirmation);
     }
 
@@ -26,12 +25,13 @@ public class HelloCommand extends AbstractPlayerCommand {
             @Nonnull PlayerRef playerRef,
             @Nonnull World world
     ) {
-        EventTitleUtil.showEventTitleToPlayer(
-                playerRef,
-                Message.raw("Hello world!"),
-                Message.raw("Like and subscribe :)"),
-                true
-        );
-    }
+        Message msg = Message.raw("[Stompcast] Hello from plugin land.")
+                .bold(true)
+                .color("#FFD54A");
 
+        world.sendMessage(msg);
+
+        // Optional: confirm back to the sender only (also via PlayerRef)
+        playerRef.sendMessage(Message.raw("Sent. You are now officially a menace."));
+    }
 }
