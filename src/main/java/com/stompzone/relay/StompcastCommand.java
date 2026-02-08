@@ -1,4 +1,4 @@
-package com.stompzone.testplugin;
+package com.stompzone.relay;
 
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;

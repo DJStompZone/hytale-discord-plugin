@@ -1,12 +1,12 @@
-package com.stompzone.testplugin.chat;
+package com.stompzone.relay.chat;
 
 import java.util.concurrent.CompletableFuture;
 import com.hypixel.hytale.event.EventRegistry;
 import com.hypixel.hytale.event.IEventRegistry;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.event.events.player.PlayerChatEvent;
-import com.stompzone.testplugin.bridge.Py4JHolder;
-import com.stompzone.testplugin.chat.ChatBroadcaster;
+import com.stompzone.relay.bridge.Py4JHolder;
+import com.stompzone.relay.chat.ChatBroadcaster;
 
 public final class PlayerChatListener {
 

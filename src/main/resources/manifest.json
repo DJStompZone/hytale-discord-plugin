@@ -2,5 +2,5 @@
   "Group": "com.stompzone",
   "Name": "TestPlugin",
   "Version": "1.1.0",
-  "Main": "com.stompzone.testplugin.TestPlugin"
+  "Main": "com.stompzone.relay.HyPhoenix"
 }

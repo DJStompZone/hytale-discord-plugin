@@ -1,4 +1,4 @@
-package com.stompzone.testplugin.chat;
+package com.stompzone.relay.chat;
 
 import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.universe.Universe;

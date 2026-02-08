@@ -1,4 +1,4 @@
-package com.stompzone.testplugin;
+package com.stompzone.relay;
 
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;

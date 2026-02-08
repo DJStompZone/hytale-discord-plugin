@@ -1,7 +1,7 @@
-package com.stompzone.testplugin.bridge;
+package com.stompzone.relay.bridge;
 
 import com.hypixel.hytale.logger.HytaleLogger;
-import com.stompzone.testplugin.chat.ChatBroadcaster;
+import com.stompzone.relay.chat.ChatBroadcaster;
 import java.util.logging.Level;
 import py4j.GatewayServer;
 

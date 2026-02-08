@@ -1,22 +1,22 @@
-package com.stompzone.testplugin;
+package com.stompzone.relay;
 
 import java.util.logging.Level;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
-import com.stompzone.testplugin.bridge.Py4JHolder;
-import com.stompzone.testplugin.chat.PlayerChatListener;
+import com.stompzone.relay.bridge.Py4JHolder;
+import com.stompzone.relay.chat.PlayerChatListener;
 
 import javax.annotation.Nonnull;
 
-public class TestPlugin extends JavaPlugin {
+public class HyPhoenix extends JavaPlugin {
 
-    public TestPlugin(@Nonnull JavaPluginInit init) {
+    public HyPhoenix(@Nonnull JavaPluginInit init) {
         super(init);
     }
 
     @Override
     public void start() {
-        getLogger().atInfo().log("StompZone TestPlugin chat bridge loaded.");
+        getLogger().atInfo().log("StompZone HyPhoenix chat bridge loaded.");
 
         PlayerChatListener.register(
             getEventRegistry(),
