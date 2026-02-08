@@ -1,1 +1,1 @@
-rootProject.name = "TestPlugin"
+rootProject.name = "HyPhoenix"
