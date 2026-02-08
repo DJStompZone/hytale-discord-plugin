@@ -1,4 +1,4 @@
-<div align="center"> <h1>HyPhoenix</h1>
+<div align="center"> <h1>HyPhoenix</h1><p>An extensible Hytale / Discord chat relay using Py4J.</p>
 
 <img src="https://i.imgur.com/7q1XWa1.jpeg" width=512>
 <br>
