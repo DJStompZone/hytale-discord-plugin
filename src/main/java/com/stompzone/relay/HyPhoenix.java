@@ -14,19 +14,39 @@ public class HyPhoenix extends JavaPlugin {
         super(init);
     }
 
-    @Override
-    public void start() {
-        getLogger().atInfo().log("StompZone HyPhoenix chat bridge loaded.");
+//    @Override
+//    public void start() {
+//        super.start();
+//        Py4JHolder.start(this, this.getLogger(), 25333);
+//        getLogger().atInfo().log("StompZone HyPhoenix chat bridge loaded.");
+//        PlayerChatListener.register(
+//            getEventRegistry(),
+//            getLogger()
+//        );
+//    }
 
-        PlayerChatListener.register(
-            getEventRegistry(),
-            getLogger()
-        );
-    }
+@Override
+public void start() {
+    super.start();
+    Py4JHolder.start(this.getLogger(), 25333);
+    getLogger().atInfo().log("StompZone HyPhoenix chat bridge loaded.");
+    PlayerChatListener.register(getEventRegistry(), getLogger());
+}
+
+//    @Override
+//    public void start() {
+//        getLogger().atInfo().log("StompZone HyPhoenix chat bridge loaded.");
+//
+//        PlayerChatListener.register(
+//            getEventRegistry(),
+//            getLogger()
+//        );
+//    }
 
     @Override
     protected void shutdown() {
-        super.shutdown();
+//        super.shutdown();
         Py4JHolder.stop();
+        super.shutdown();
     }
 }
